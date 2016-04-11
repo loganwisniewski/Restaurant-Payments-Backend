@@ -1,0 +1,602 @@
+.sortable-list { list-style-type: none; margin: 10px; padding: 0; min-height: 106px; width: 95%; float: left}
+.sortable-list li {background-color: #eee; margin: 0 3px 3px 3px; padding: 15px; padding-left: 1.5em; font-size: 1em;}
+.sortable-list li span {margin-left: -1.3em; margin-right: 10px}
+
+
+.placeholder {
+    border: 3px dashed #aaa;
+    height: 40px;
+    background-color: transparent !important;
+}
+
+.ui-sortable-helper {
+    background-color: #eee;
+    margin: 0 3px 3px 3px;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    font-size: 1.4em;
+    width: 400px;
+    height: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.addCategory{
+    margin-top: 5px;
+}
+
+.glyphicon-resize-vertical{font-size: 0.7em !important; color: #aaa;}
+
+.sidebar{
+    width:30%;
+    float: left;
+}
+
+.menu-workspace{
+    width: 100%;
+    float: left;
+}
+
+.meal-results{
+    width:100%;
+    min-height: 20px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+a{
+    color: #000;
+}
+
+.nav-wrap{
+    width: 100%;
+    text-align: center;
+}
+
+.btn-group{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.btn-save{
+    background-color: #2286e8;
+    color: #fff;
+    border: none;
+    padding: 5px 15px 5px 15px;
+}
+
+.glyphicon-remove{
+    margin-top: 3px;
+}
+
+.glyphicon-remove{
+    cursor: pointer;
+}
+
+.category{
+    background-color: #cd0a0a !important;
+    color: #fff;
+}
+
+.category .glyphicon{
+    color: #fff;
+}
+
+.glyphicon-refresh{
+    padding: 6px 5px 5px 5px;
+    margin: -1px 5px 0 0;
+}
+
+button span.glyphicon{
+    padding: 0 !important;
+}
+
+#searchBox, #resultsFor{
+    font-weight: 300;
+}
+
+#dashMenu{
+    margin-bottom: 20px;
+}
+
+.restaurantSelectize{
+    min-width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+.item, .option{
+    font-size: 20px;
+}
+
+.selectize-input{
+    padding: 5px 10px 5px 10px;
+}
+
+.option{
+    padding-top: 2px !important;
+
+}
+
+#restaurantSelectize{
+    display: none;
+}
+
+.selectizeWrap{
+    width: inherit;
+    text-align: center;
+    margin: 8px;
+    font-weight: 100;
+    position: absolute;
+}
+
+.selectizeWrap{
+    width: inherit;
+    text-align: center;
+    display: inline-block;
+    margin: 8px;
+    font-weight: 100;
+}
+
+.modal-content{
+    text-align: center;
+}
+
+.selectize-dropdown .active{
+    color: #fff !important;
+    background: #2286e8;
+}
+
+html, body{
+    height: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-text{
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    margin-left: -100px;
+}
+
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.navbar-inverse{
+    width: 100%;
+}
+
+.navbar-title{
+    float: left;
+    position: absolute;
+    width: 100%;
+    margin: 10px auto 0 auto;
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+    pointer-events: none;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.page-sidebar{
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #353535;
+    float: left;
+}
+
+.page-sidebar-icon{
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon:hover{
+    background-color: #111;
+}
+
+.icon:hover > .dropout{
+    visibility: visible;
+}
+
+.dropout{
+    position: absolute;
+    margin-left: 80px;
+    background-color: #111;
+    visibility: hidden;
+    z-index: 100;
+}
+.dropout ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+.dropout ul li{
+    padding: 10px 20px 10px 20px;
+    color: #fff;
+}
+
+.dropout ul li:hover{
+    background-color: #222;
+}
+
+.page-body{
+    float: left;
+    width: -moz-calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: calc(100% - 80px);
+    height: -moz-calc(100% - 50px);
+    height: -webkit-calc(100% - 50px);
+    height: calc(100% - 50px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 50px 0 50px;
+    background-color: #eee;
+}
+
+h2{
+    font-weight: 300;
+    color: #555;
+}
+
+.workspace{
+    width: 100%;
+    height: calc(100% - 2px);
+    overflow-y: scroll;
+}
+
+.workspace-head input{
+    font-size: 25px;
+    height: 100%;
+}
+
+.workspace-head .btn{
+    float: left;
+    margin: 23px 0 0 20px;
+    padding: 5px 10px 5px 10px;
+    font-size: 12px;
+}
+
+.workspace-head h2{
+    float: left;
+}
+
+.workspace-head h2 small{
+    margin-right: 5px;
+}
+
+.workspace-body .lead{
+    font-size: medium;
+}
+
+/* Layout - Sidebar */
+.layout-sidebar .workspace-head{
+    width: 100%;
+    float: left;
+    padding: 0 calc(20% + 50px) 0 0;
+}
+
+.layout-sidebar .workspace-sidebar{
+    width: 20%;
+    min-height: 400px;
+    float: right;
+    padding-top: 20px;
+}
+
+.layout-sidebar .workspace-body{
+    width: 80%;
+    float: left;
+    padding: 20px 50px 0 0;
+}
+
+/* Layout - FullWidth */
+.layout-fullwidth .workspace-head{
+    width: 100%;
+    float: left;
+    padding: 0 50px 0 0;
+}
+
+.layout-fullwidth .workspace-body{
+    width: 100%;
+    float: left;
+    padding: 20px 50px 0 0;
+}
+
+.panel{
+    border-radius: 0px;
+}
+
+.panel-heading{
+    background-color: #f5f5f5;
+}
+
+.form-panel{
+    border-radius: 10px;
+}
+
+.form-panel tr td{
+    height: 50px;
+    padding-top: 15px !important;
+}
+
+.form-panel tr th{
+    padding-top: 15px !important;
+    padding-left: 15px !important;
+}
+
+.form-panel input[type="text"], .form-panel input[type="password"]{
+    max-width:350px;
+}
+
+.status{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.status-good{
+    background-color: green;
+}
+
+.status-bad{
+    background-color: red;
+}
+.table-hover tr:hover{
+    background-color: #fcfcfc !important;
+}
+
+.table-list tr{
+    height: 75px;
+}
+
+.table-list a:hover{
+    text-decoration: underline;
+}
+
+.menu-tab{
+    background-color: rgb(205, 10, 10);
+}
+
+.menu-tab:hover{
+    background-color: #ff0000 !important;
+}
+
+button.form-control{
+    color: #fff !important;
+    background: #2286e8;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/*
+    Portal
+*/
+
+.portal-wrap{
+    width:100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 0;
+}
+
+.portal-heading{
+    text-align: center;
+}
+
+.portal-logo{
+    width: 400px;
+    margin-top: 100px;
+}
+
+.panel-login{
+    margin: 10px auto 0 auto;
+    width: 400px;
+}
+
+.panel-login input[type="text"]{
+    margin: 0 0 20px 0;
+}
+
+input[type="submit"].form-control{
+    color: #fff !important;
+    background: #2286e8;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: none;
+}
+
+/*
+    Index (Dash/Content)
+*/
+
+.index-wrap{
+    text-align: center;
+    height: 100%;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.index-body{
+    width: 60%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.index-body .panel-default{
+    width: 100% !important;
+    height: 228px;
+    border-radius: 20px;
+    text-align: center;
+    float: left;
+    padding-top: 40px;
+    border: 1px solid #aaa !important;
+}
+
+.col-md-6 .panel-default{
+    height: 100px;
+    padding-top: 0;
+}
+
+.index-body .panel-default:hover {
+    cursor: pointer;
+}
+
+.index-body .panel-default.last{
+    margin-right: 0;
+}
+
+.index-footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.panel-body .selectizeWrap{
+    position: relative;
+    display: block;
+    margin: 0;
+}
+
+.index-option{
+    position: absolute;
+    display: inline-block;
+
+}
+
+.index-user-info{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #555;
+}
+
+
+
+/* this CSS is not part of the widget, it is here just as an example of the demo page styling.... Don't copy this one, roll your own. One
+ * of the key things about the widget is that it allows you to do your own styling!
+ */
+
+#editor, #first-editor, #second-editor {
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 4px;
+    box-sizing: content-box;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+    overflow: scroll;
+    outline: none;
+}
+#editor:focus{
+    border-color:rgba(82, 168, 236, 0.8);
+    outline:0;
+    outline:thin dotted \9;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+
+.voiceBtn {
+    width: 20px;
+    color: transparent;
+    background-color: transparent;
+    transform: scale(2.0, 2.0);
+    -webkit-transform: scale(2.0, 2.0);
+    -moz-transform: scale(2.0, 2.0);
+    border: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+}
+
+.dropdown-active .item{
+    margin-left: 2px;
+}
+
+.btn-toolbar {
+    padding: 10px 0px 10px 0px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content:attr(data-placeholder)
+}
+
+.placeholderText {
+    color: #777;
+}
+
+/*
+	Font Sizes
+	fs represents the font-size attribute; therefore,
+	fs-five would be the equivalent to font-size: 5;
+*/
+
+.fs-header{
+    padding: 0;
+    margin: 0;
+}
+
+.fs-One {
+    font-size: small;
+}
+
+.fs-Three {
+    font-size: medium;
+}
+
+.fs-Five {
+    font-size: large;
+}
+
+.media_img{
+    height: 100px;
+    width: auto;
+    margin: 20px 10px 0 0;
+
+}
