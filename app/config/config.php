@@ -9,7 +9,7 @@ return new \Phalcon\Config(array(
         'adapter'     => 'Mysql',
         'host'        => 'localhost',
         'username'    => 'admin',
-        'password'    => 'F27s9LP6',
+        'password'    => 'password',
         'dbname'      => 'test_chef',
         'charset'     => 'utf8',
     ),
